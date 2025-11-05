@@ -1,152 +1,46 @@
-##### ***PixGonz***
+PixGonz – Web-Based Image Editing App
 
-PixGonz is a web-based digital image editing application built with React (frontend) and FastAPI (backend).
+PixGonz is a React + FastAPI digital image processing application inspired by Gonzalez & Woods.
+It provides phase-wise image enhancement, segmentation, and display-based correction tools with a clean glass-dark UI and theory mapping for learning-based usage.
 
-It offers phase-wise image operations—from basic adjustments (brightness, contrast, grayscale, blur, sharpen, masking), to advanced segmentation and color controls, plus display-based correction.
+Features
 
-Designed for a clean, modern editing experience, it features a unique glassy dark theme and interactive mapping to Digital Image Processing chapters.
+Phase 1: Brightness & contrast, rotate, grayscale, blur, sharpen, masking
 
+Phase 2: Segmentation, color adjustments, undo/redo
 
+Phase 3: Display-based intensity & saturation correction
 
-***Features***
+Chapter-linked explanations for every feature
 
-<i>Phase 1: </i>Basic image enhancement (brightness/contrast, rotate, grayscale, blur, sharpen, masking)
+Project Structure
+/frontend → React UI
+/backend → FastAPI server (image processing)
 
+Setup
 
+- Backend (FastAPI)
+  cd backend
+  python -m venv .venv
 
-*Phase 2:* Segmentation, color adjustment, undo/redo actions
+# Windows
 
-
-
-*Phase 3:* Display-based intensity/saturation correction
-
-
-
-**Glassy dark UI for comfortable editing**
-
-
-
-**Chapter mapping: Every feature links to theory for instant explanation**
-
-
-
-***Project Structure***
-
-text
-
-/frontend    # React client app
-
-/backend     # FastAPI server (image operations)
-
-Setup and Usage
-
-Requirements
-
-Python 3.8+
-
-
-
-Node.js 14+
-
-
-
-***Backend (FastAPI)***
-
-Navigate to backend folder:
-
-
-
-text
-
-cd backend
-
-Create and activate a virtualenv:
-
-
-
-*text*
-
-python -m venv .venv
-
-.venv\\Scripts\\activate      # Windows
-
-source .venv/bin/activate  # Mac/Linux
-
-Install required packages:
-
-
-
-*text*
+.venv\Scripts\activate
 
 pip install -r requirements.txt
-
-Start FastAPI server:
-
-
-
-*text*
-
 uvicorn main:app --reload --port 8000
 
-Server runs at http://127.0.0.1:8000
+- Frontend (React)
+  cd frontend
+  npm install
+  npm start
 
+Backend: http://127.0.0.1:8000
+Frontend: http://localhost:3000
 
+Repo Link
 
-Frontend (React)
+🔗 GitHub: https://github.com/kritik8/pixgonzDIP
 
-Navigate to frontend folder (or project root if code is there):
-
-
-
-text
-
-cd frontend
-
-Install Node dependencies:
-
-
-
-text
-
-npm install
-
-Start the app:
-
-
-
-text
-
-npm start
-
-App opens at http://localhost:3000
-
-
-
-Connect Frontend and Backend
-
-Make sure both servers are running.
-
-
-
-Use the React UI to upload/edit images; all image operations are handled via FastAPI endpoints.
-
-
-
-Credits
-
-Inspired by Gonzalez \& Woods: Digital Image Processing (4th Edition)
-
-
-
-*Developed by Kritik Jain | Durwesh Tirpude*
-
-
-
-Notes
-
-For chapter mapping, update the mapping JSON as new features are added.
-
-
-
-For advanced hosting, configure deployment scripts for both frontend and backend.
-
+Developers
+Kritik Jain | Durwesh Tirpude
